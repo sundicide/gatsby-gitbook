@@ -6,7 +6,7 @@ metaDescription: "This is the meta description for this page"
 
 
 ```r
-options(digits=2)
+options(digits=2)  # limits the number of digits printed after the decimal place
 Student <- c("John Davis", "Angela Williams", "Bullwinkle Moose",
              "David Jones", "Janice Markhammer", "Cheryl Cushing",
              "Reuven Ytzrhak", "Greg Knox", "Joel England",
@@ -36,7 +36,31 @@ roster <- roster[order(Lastname,Firstname),]
 
 roster
 ```
+
+```r
+# init
+            Student  Math  Science    English
+1 John Davis          502     95        25
+2 Angela Williams     600     99        22
+3 Bullwinklee Moose   412     80        18
+4 David Jones         358     82        15
+5 Janice Markhammer   495     75        20
+6
+7
+8
+9
+10 MaryRayburn
+
+512     85        28
+410     80        15
+625     95        30
+573     89        27
+522     86        18
 ```
+
+```r
+# results
+
     Firstname   Lastname Math Science English score grade
 6      Cheryl    Cushing  512      85      28  0.35     C
 1        John      Davis  502      95      25  0.56     B
